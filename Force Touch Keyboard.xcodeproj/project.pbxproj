@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BF2A45D11DC3358E006C6409 /* UIScrollView+Magic.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A45D01DC3358E006C6409 /* UIScrollView+Magic.swift */; };
+		BF2A45D31DC33783006C6409 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = BF2A45D21DC33783006C6409 /* README.md */; };
 		BF4492201DC31417005A4E75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF44921F1DC31417005A4E75 /* AppDelegate.swift */; };
 		BF4492221DC31417005A4E75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4492211DC31417005A4E75 /* ViewController.swift */; };
 		BF4492251DC31417005A4E75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF4492231DC31417005A4E75 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		BF2A45D01DC3358E006C6409 /* UIScrollView+Magic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Magic.swift"; sourceTree = "<group>"; };
+		BF2A45D21DC33783006C6409 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BF44921C1DC31417005A4E75 /* Force Touch Keyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Force Touch Keyboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF44921F1DC31417005A4E75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF4492211DC31417005A4E75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +48,7 @@
 		BF4492131DC31417005A4E75 = {
 			isa = PBXGroup;
 			children = (
+				BF2A45D21DC33783006C6409 /* README.md */,
 				BF44921E1DC31417005A4E75 /* Force Touch Keyboard */,
 				BF44921D1DC31417005A4E75 /* Products */,
 			);
@@ -152,6 +155,7 @@
 				BF4492221DC31417005A4E75 /* ViewController.swift in Sources */,
 				BF4492201DC31417005A4E75 /* AppDelegate.swift in Sources */,
 				BFD0AA031DC31EA30021E1B7 /* KeyButton.swift in Sources */,
+				BF2A45D31DC33783006C6409 /* README.md in Sources */,
 				BF2A45D11DC3358E006C6409 /* UIScrollView+Magic.swift in Sources */,
 				BFD0AA071DC322E30021E1B7 /* UIColor+Magic.swift in Sources */,
 				BFD0AA051DC31EBE0021E1B7 /* Array+Magic.swift in Sources */,
