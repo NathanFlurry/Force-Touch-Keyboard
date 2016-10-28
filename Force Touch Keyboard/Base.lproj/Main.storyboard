@@ -1,26 +1,357 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Force_Touch_Keyboard" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="mYa-wX-RoN">
+                                <rect key="frame" x="0.0" y="135" width="667" height="60"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="txu-pv-VSR" customClass="KeyButton" customModule="Force_Touch_Keyboard" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="60.5" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="keyName" value="Q"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sN6-bj-RaZ" customClass="KeyButton" customModule="Force_Touch_Keyboard" customModuleProvider="target">
+                                        <rect key="frame" x="60.5" y="0.0" width="61" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="keyName" value="W"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="64l-bu-BsK" customClass="KeyButton" customModule="Force_Touch_Keyboard" customModuleProvider="target">
+                                        <rect key="frame" x="121.5" y="0.0" width="60.5" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="keyName" value="E"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Msm-r8-hzT" customClass="KeyButton" customModule="Force_Touch_Keyboard" customModuleProvider="target">
+                                        <rect key="frame" x="182" y="0.0" width="60.5" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="keyName" value="R"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AXo-Ru-ZDV" customClass="KeyButton" customModule="Force_Touch_Keyboard" customModuleProvider="target">
+                                        <rect key="frame" x="242.5" y="0.0" width="60.5" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="keyName" value="T"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yTa-AY-go4" customClass="KeyButton" customModule="Force_Touch_Keyboard" customModuleProvider="target">
+                                        <rect key="frame" x="303" y="0.0" width="61" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="keyName" value="Y"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xCz-yy-JMT" customClass="KeyButton" customModule="Force_Touch_Keyboard" customModuleProvider="target">
+                                        <rect key="frame" x="364" y="0.0" width="60.5" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="keyName" value="U"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cvD-Xn-dYo" customClass="KeyButton" customModule="Force_Touch_Keyboard" customModuleProvider="target">
+                                        <rect key="frame" x="424.5" y="0.0" width="60.5" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="keyName" value="I"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y6d-zn-VOx" customClass="KeyButton" customModule="Force_Touch_Keyboard" customModuleProvider="target">
+                                        <rect key="frame" x="485" y="0.0" width="60.5" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="keyName" value="O"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GqR-l6-mok" customClass="KeyButton" customModule="Force_Touch_Keyboard" customModuleProvider="target">
+                                        <rect key="frame" x="545.5" y="0.0" width="61" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="keyName" value="P"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7kR-4l-frs" customClass="KeyButton" customModule="Force_Touch_Keyboard" customModuleProvider="target">
+                                        <rect key="frame" x="606.5" y="0.0" width="60.5" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="keyName" value="delete"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="XEy-9O-jar">
+                                <rect key="frame" x="30" y="195" width="540" height="60"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O9J-BZ-gxF" customClass="KeyButton" customModule="Force_Touch_Keyboard" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="keyName" value="A"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iiz-gK-HjV" customClass="KeyButton" customModule="Force_Touch_Keyboard" customModuleProvider="target">
+                                        <rect key="frame" x="60" y="0.0" width="60" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="keyName" value="S"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ciw-Ri-cMC" customClass="KeyButton" customModule="Force_Touch_Keyboard" customModuleProvider="target">
+                                        <rect key="frame" x="120" y="0.0" width="60" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="keyName" value="D"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V6D-ZE-PKz" customClass="KeyButton" customModule="Force_Touch_Keyboard" customModuleProvider="target">
+                                        <rect key="frame" x="180" y="0.0" width="60" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="keyName" value="F"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zyn-hn-hwf" customClass="KeyButton" customModule="Force_Touch_Keyboard" customModuleProvider="target">
+                                        <rect key="frame" x="240" y="0.0" width="60" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="keyName" value="G"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tBO-gA-a9v" customClass="KeyButton" customModule="Force_Touch_Keyboard" customModuleProvider="target">
+                                        <rect key="frame" x="300" y="0.0" width="60" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="keyName" value="H"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CIv-ve-3jE" customClass="KeyButton" customModule="Force_Touch_Keyboard" customModuleProvider="target">
+                                        <rect key="frame" x="360" y="0.0" width="60" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="keyName" value="J"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eio-a6-lgw" customClass="KeyButton" customModule="Force_Touch_Keyboard" customModuleProvider="target">
+                                        <rect key="frame" x="420" y="0.0" width="60" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="keyName" value="K"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T0A-El-hlc" customClass="KeyButton" customModule="Force_Touch_Keyboard" customModuleProvider="target">
+                                        <rect key="frame" x="480" y="0.0" width="60" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="keyName" value="L"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="48I-92-iEk">
+                                <rect key="frame" x="0.0" y="255" width="667" height="60"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e1m-JO-ZJe" customClass="KeyButton" customModule="Force_Touch_Keyboard" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="60.5" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="keyName" value="shift"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uOA-yA-jIy" customClass="KeyButton" customModule="Force_Touch_Keyboard" customModuleProvider="target">
+                                        <rect key="frame" x="60.5" y="0.0" width="61" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="keyName" value="Z"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kKA-NK-C7T" customClass="KeyButton" customModule="Force_Touch_Keyboard" customModuleProvider="target">
+                                        <rect key="frame" x="121.5" y="0.0" width="60.5" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="keyName" value="X"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eRE-jb-mvM" customClass="KeyButton" customModule="Force_Touch_Keyboard" customModuleProvider="target">
+                                        <rect key="frame" x="182" y="0.0" width="60.5" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="keyName" value="C"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c05-Nd-zMe" customClass="KeyButton" customModule="Force_Touch_Keyboard" customModuleProvider="target">
+                                        <rect key="frame" x="242.5" y="0.0" width="60.5" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="keyName" value="V"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uWq-eh-03I" customClass="KeyButton" customModule="Force_Touch_Keyboard" customModuleProvider="target">
+                                        <rect key="frame" x="303" y="0.0" width="61" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="keyName" value="B"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ayc-cG-paU" customClass="KeyButton" customModule="Force_Touch_Keyboard" customModuleProvider="target">
+                                        <rect key="frame" x="364" y="0.0" width="60.5" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="keyName" value="N"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eIo-Ya-Ibh" customClass="KeyButton" customModule="Force_Touch_Keyboard" customModuleProvider="target">
+                                        <rect key="frame" x="424.5" y="0.0" width="60.5" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="keyName" value="M"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6oo-N2-bin" customClass="KeyButton" customModule="Force_Touch_Keyboard" customModuleProvider="target">
+                                        <rect key="frame" x="485" y="0.0" width="60.5" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="keyName" value=","/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CsI-Dz-hHx" customClass="KeyButton" customModule="Force_Touch_Keyboard" customModuleProvider="target">
+                                        <rect key="frame" x="545.5" y="0.0" width="61" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="keyName" value="."/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lOa-75-Oca" customClass="KeyButton" customModule="Force_Touch_Keyboard" customModuleProvider="target">
+                                        <rect key="frame" x="606.5" y="0.0" width="60.5" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="keyName" value="shift"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vst-Af-VU5">
+                                <rect key="frame" x="0.0" y="315" width="667" height="60"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YtC-4d-FSN" customClass="KeyButton" customModule="Force_Touch_Keyboard" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="667" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="keyName" value=" "/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="vst-Af-VU5" secondAttribute="height" multiplier="667:60" id="wMR-Te-FvB"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k9l-sj-0Jh" userLabel="Return" customClass="KeyButton" customModule="Force_Touch_Keyboard" customModuleProvider="target">
+                                <rect key="frame" x="570" y="195" width="97" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="keyName" value="return"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Text." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="odU-rv-isg">
+                                <rect key="frame" x="20" y="20" width="627" height="115"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="XEy-9O-jar" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="02A-Or-dn6"/>
+                            <constraint firstItem="k9l-sj-0Jh" firstAttribute="leading" secondItem="XEy-9O-jar" secondAttribute="trailing" id="52f-mX-HyT"/>
+                            <constraint firstAttribute="trailing" secondItem="mYa-wX-RoN" secondAttribute="trailing" id="A1d-Wg-bBz"/>
+                            <constraint firstItem="XEy-9O-jar" firstAttribute="top" secondItem="mYa-wX-RoN" secondAttribute="bottom" id="B47-er-JgW"/>
+                            <constraint firstItem="48I-92-iEk" firstAttribute="height" secondItem="XEy-9O-jar" secondAttribute="height" id="DgV-rX-KzX"/>
+                            <constraint firstItem="odU-rv-isg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Hy0-A9-8fC"/>
+                            <constraint firstItem="48I-92-iEk" firstAttribute="top" secondItem="k9l-sj-0Jh" secondAttribute="bottom" id="JTZ-xb-XQn"/>
+                            <constraint firstItem="vst-Af-VU5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="MWs-c8-iNi"/>
+                            <constraint firstItem="vst-Af-VU5" firstAttribute="height" secondItem="48I-92-iEk" secondAttribute="height" id="NMt-Ws-Lzm"/>
+                            <constraint firstItem="48I-92-iEk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="QZJ-UR-a0p"/>
+                            <constraint firstAttribute="trailing" secondItem="48I-92-iEk" secondAttribute="trailing" id="Rd1-iE-fK7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="odU-rv-isg" secondAttribute="trailing" id="U9i-UN-bzh"/>
+                            <constraint firstItem="k9l-sj-0Jh" firstAttribute="width" secondItem="XEy-9O-jar" secondAttribute="width" multiplier="0.18" id="ZMQ-de-NAb"/>
+                            <constraint firstAttribute="trailing" secondItem="vst-Af-VU5" secondAttribute="trailing" id="aEo-nW-nMp"/>
+                            <constraint firstItem="k9l-sj-0Jh" firstAttribute="height" secondItem="XEy-9O-jar" secondAttribute="height" id="fWx-XD-vkc"/>
+                            <constraint firstItem="mYa-wX-RoN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lN9-4T-GF3"/>
+                            <constraint firstItem="XEy-9O-jar" firstAttribute="height" secondItem="mYa-wX-RoN" secondAttribute="height" id="mUK-BD-ZuF"/>
+                            <constraint firstItem="vst-Af-VU5" firstAttribute="top" secondItem="48I-92-iEk" secondAttribute="bottom" id="mda-DP-2s7"/>
+                            <constraint firstAttribute="trailing" secondItem="k9l-sj-0Jh" secondAttribute="trailing" id="pSF-lj-OvM"/>
+                            <constraint firstItem="mYa-wX-RoN" firstAttribute="top" secondItem="odU-rv-isg" secondAttribute="bottom" id="rM9-bo-pEL"/>
+                            <constraint firstItem="XEy-9O-jar" firstAttribute="centerY" secondItem="k9l-sj-0Jh" secondAttribute="centerY" id="wDO-dd-9mh"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vst-Af-VU5" secondAttribute="bottom" id="xKU-FQ-10Q"/>
+                            <constraint firstItem="odU-rv-isg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="xKy-dT-UCb"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textView" destination="odU-rv-isg" id="RIU-XJ-kla"/>
+                        <outletCollection property="keyButtons" destination="GqR-l6-mok" collectionClass="NSMutableArray" id="IYc-nn-yGG"/>
+                        <outletCollection property="keyButtons" destination="64l-bu-BsK" collectionClass="NSMutableArray" id="OZV-Po-IGX"/>
+                        <outletCollection property="keyButtons" destination="CIv-ve-3jE" collectionClass="NSMutableArray" id="Ak6-hW-I71"/>
+                        <outletCollection property="keyButtons" destination="CsI-Dz-hHx" collectionClass="NSMutableArray" id="ufn-ev-ZDK"/>
+                        <outletCollection property="keyButtons" destination="YtC-4d-FSN" collectionClass="NSMutableArray" id="LOZ-UY-XPh"/>
+                        <outletCollection property="keyButtons" destination="txu-pv-VSR" collectionClass="NSMutableArray" id="7ag-3z-iaw"/>
+                        <outletCollection property="keyButtons" destination="sN6-bj-RaZ" collectionClass="NSMutableArray" id="1Ho-Tl-Vhq"/>
+                        <outletCollection property="keyButtons" destination="Msm-r8-hzT" collectionClass="NSMutableArray" id="Lxf-2Z-742"/>
+                        <outletCollection property="keyButtons" destination="AXo-Ru-ZDV" collectionClass="NSMutableArray" id="gPC-kW-4Qo"/>
+                        <outletCollection property="keyButtons" destination="yTa-AY-go4" collectionClass="NSMutableArray" id="1rH-hm-3bQ"/>
+                        <outletCollection property="keyButtons" destination="xCz-yy-JMT" collectionClass="NSMutableArray" id="B8m-fg-ayP"/>
+                        <outletCollection property="keyButtons" destination="cvD-Xn-dYo" collectionClass="NSMutableArray" id="ciK-C6-apO"/>
+                        <outletCollection property="keyButtons" destination="y6d-zn-VOx" collectionClass="NSMutableArray" id="ETC-HL-eCf"/>
+                        <outletCollection property="keyButtons" destination="7kR-4l-frs" collectionClass="NSMutableArray" id="n6W-vV-eaX"/>
+                        <outletCollection property="keyButtons" destination="O9J-BZ-gxF" collectionClass="NSMutableArray" id="zUy-l5-H8D"/>
+                        <outletCollection property="keyButtons" destination="Iiz-gK-HjV" collectionClass="NSMutableArray" id="Clh-1A-2eI"/>
+                        <outletCollection property="keyButtons" destination="Ciw-Ri-cMC" collectionClass="NSMutableArray" id="gMh-lD-uur"/>
+                        <outletCollection property="keyButtons" destination="V6D-ZE-PKz" collectionClass="NSMutableArray" id="skI-ds-bg1"/>
+                        <outletCollection property="keyButtons" destination="Zyn-hn-hwf" collectionClass="NSMutableArray" id="Gb6-Pc-KGq"/>
+                        <outletCollection property="keyButtons" destination="tBO-gA-a9v" collectionClass="NSMutableArray" id="iOG-Js-9b3"/>
+                        <outletCollection property="keyButtons" destination="Eio-a6-lgw" collectionClass="NSMutableArray" id="17k-oW-V6N"/>
+                        <outletCollection property="keyButtons" destination="T0A-El-hlc" collectionClass="NSMutableArray" id="0GS-oy-bEW"/>
+                        <outletCollection property="keyButtons" destination="e1m-JO-ZJe" collectionClass="NSMutableArray" id="ZAc-JT-sAh"/>
+                        <outletCollection property="keyButtons" destination="uOA-yA-jIy" collectionClass="NSMutableArray" id="13m-P5-MLQ"/>
+                        <outletCollection property="keyButtons" destination="kKA-NK-C7T" collectionClass="NSMutableArray" id="ndd-lv-gRF"/>
+                        <outletCollection property="keyButtons" destination="eRE-jb-mvM" collectionClass="NSMutableArray" id="5HL-vE-mBa"/>
+                        <outletCollection property="keyButtons" destination="c05-Nd-zMe" collectionClass="NSMutableArray" id="fYq-o6-7jY"/>
+                        <outletCollection property="keyButtons" destination="uWq-eh-03I" collectionClass="NSMutableArray" id="DW8-hP-dwe"/>
+                        <outletCollection property="keyButtons" destination="Ayc-cG-paU" collectionClass="NSMutableArray" id="7zn-uG-gc6"/>
+                        <outletCollection property="keyButtons" destination="eIo-Ya-Ibh" collectionClass="NSMutableArray" id="NyY-w5-cOE"/>
+                        <outletCollection property="keyButtons" destination="6oo-N2-bin" collectionClass="NSMutableArray" id="9Zq-eT-Anc"/>
+                        <outletCollection property="keyButtons" destination="lOa-75-Oca" collectionClass="NSMutableArray" id="VCE-ho-Wvr"/>
+                        <outletCollection property="keyButtons" destination="k9l-sj-0Jh" collectionClass="NSMutableArray" id="AEt-XX-qUJ"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="60.719640179910051" y="37.600000000000001"/>
         </scene>
     </scenes>
 </document>

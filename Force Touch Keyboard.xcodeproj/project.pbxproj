@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF2A45D11DC3358E006C6409 /* UIScrollView+Magic.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A45D01DC3358E006C6409 /* UIScrollView+Magic.swift */; };
 		BF4492201DC31417005A4E75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF44921F1DC31417005A4E75 /* AppDelegate.swift */; };
 		BF4492221DC31417005A4E75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4492211DC31417005A4E75 /* ViewController.swift */; };
 		BF4492251DC31417005A4E75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF4492231DC31417005A4E75 /* Main.storyboard */; };
 		BF4492271DC31417005A4E75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF4492261DC31417005A4E75 /* Assets.xcassets */; };
 		BF44922A1DC31417005A4E75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF4492281DC31417005A4E75 /* LaunchScreen.storyboard */; };
+		BFD0AA031DC31EA30021E1B7 /* KeyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD0AA021DC31EA30021E1B7 /* KeyButton.swift */; };
+		BFD0AA051DC31EBE0021E1B7 /* Array+Magic.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD0AA041DC31EBE0021E1B7 /* Array+Magic.swift */; };
+		BFD0AA071DC322E30021E1B7 /* UIColor+Magic.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD0AA061DC322E30021E1B7 /* UIColor+Magic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF2A45D01DC3358E006C6409 /* UIScrollView+Magic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Magic.swift"; sourceTree = "<group>"; };
 		BF44921C1DC31417005A4E75 /* Force Touch Keyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Force Touch Keyboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF44921F1DC31417005A4E75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF4492211DC31417005A4E75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,9 @@
 		BF4492261DC31417005A4E75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF4492291DC31417005A4E75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF44922B1DC31417005A4E75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFD0AA021DC31EA30021E1B7 /* KeyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyButton.swift; sourceTree = "<group>"; };
+		BFD0AA041DC31EBE0021E1B7 /* Array+Magic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Magic.swift"; sourceTree = "<group>"; };
+		BFD0AA061DC322E30021E1B7 /* UIColor+Magic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Magic.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,10 @@
 			children = (
 				BF44921F1DC31417005A4E75 /* AppDelegate.swift */,
 				BF4492211DC31417005A4E75 /* ViewController.swift */,
+				BFD0AA021DC31EA30021E1B7 /* KeyButton.swift */,
+				BFD0AA041DC31EBE0021E1B7 /* Array+Magic.swift */,
+				BFD0AA061DC322E30021E1B7 /* UIColor+Magic.swift */,
+				BF2A45D01DC3358E006C6409 /* UIScrollView+Magic.swift */,
 				BF4492231DC31417005A4E75 /* Main.storyboard */,
 				BF4492261DC31417005A4E75 /* Assets.xcassets */,
 				BF4492281DC31417005A4E75 /* LaunchScreen.storyboard */,
@@ -96,6 +108,7 @@
 				TargetAttributes = {
 					BF44921B1DC31417005A4E75 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = US5KT4GR2Y;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -138,6 +151,10 @@
 			files = (
 				BF4492221DC31417005A4E75 /* ViewController.swift in Sources */,
 				BF4492201DC31417005A4E75 /* AppDelegate.swift in Sources */,
+				BFD0AA031DC31EA30021E1B7 /* KeyButton.swift in Sources */,
+				BF2A45D11DC3358E006C6409 /* UIScrollView+Magic.swift in Sources */,
+				BFD0AA071DC322E30021E1B7 /* UIColor+Magic.swift in Sources */,
+				BFD0AA051DC31EBE0021E1B7 /* Array+Magic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +277,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = US5KT4GR2Y;
 				INFOPLIST_FILE = "Force Touch Keyboard/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.NathanFlurry.Force-Touch-Keyboard";
@@ -272,6 +290,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = US5KT4GR2Y;
 				INFOPLIST_FILE = "Force Touch Keyboard/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.NathanFlurry.Force-Touch-Keyboard";
@@ -299,6 +318,7 @@
 				BF4492301DC31417005A4E75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
