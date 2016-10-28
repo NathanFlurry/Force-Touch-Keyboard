@@ -1,7 +1,7 @@
 # Force Touch Keyboard
 
 ## Screenshot
-![Screenshot](Screenshots/1.png)
+![Screenshot](Screenshots/1.PNG)
 
 ## Concept
 
